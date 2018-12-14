@@ -1,0 +1,4 @@
+libfastjson-dev_0.99.8-2_amd64.deb libdevel optional
+libfastjson4-dbgsym_0.99.8-2_amd64.deb debug optional automatic=yes
+libfastjson4_0.99.8-2_amd64.deb libs optional
+libfastjson_0.99.8-2_amd64.buildinfo libs optional

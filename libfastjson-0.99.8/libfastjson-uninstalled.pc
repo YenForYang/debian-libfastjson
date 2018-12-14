@@ -1,0 +1,11 @@
+prefix=
+exec_prefix=
+libdir=/dev/shm/libfastjson/libfastjson-0.99.8
+includedir=/dev/shm/libfastjson/libfastjson-0.99.8
+
+Name: json
+Description: JSON implementation in C
+Version: 0.99.8
+Requires:
+Libs:  -L/dev/shm/libfastjson/libfastjson-0.99.8 -ljson-c
+Cflags: -I/dev/shm/libfastjson/libfastjson-0.99.8

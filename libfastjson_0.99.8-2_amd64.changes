@@ -1,0 +1,35 @@
+Format: 1.8
+Date: Sun, 14 Jan 2018 18:59:27 +0100
+Source: libfastjson
+Binary: libfastjson4 libfastjson-dev
+Built-For-Profiles: nobiarch nocheck nodoc
+Architecture: amd64
+Version: 0.99.8-2
+Distribution: unstable
+Urgency: medium
+Maintainer: Michael Biebl <biebl@debian.org>
+Changed-By: Michael Biebl <biebl@debian.org>
+Description:
+ libfastjson-dev - fast json library for C - development files
+ libfastjson4 - fast json library for C
+Changes:
+ libfastjson (0.99.8-2) unstable; urgency=medium
+ .
+   * Set Rules-Requires-Root to no
+   * Update Vcs-* to point to salsa.debian.org (gitlab)
+   * Bump Standards-Version to 4.1.3
+Checksums-Sha1:
+ 2f60804db0526ee7db7f604b0a4af5a271599ef5 311016 libfastjson-dev_0.99.8-2_amd64.deb
+ 8fa2d00aa1db1f5d73c301dd4e6a1910fef62a98 40160 libfastjson4-dbgsym_0.99.8-2_amd64.deb
+ 536cc59312121436b83f194bb1f3ea480b580abd 51508 libfastjson4_0.99.8-2_amd64.deb
+ 6501394eea48f25bdfb856d81774e513235f162d 5588 libfastjson_0.99.8-2_amd64.buildinfo
+Checksums-Sha256:
+ dddcbc5b9e930708cb1cdd9abd3587d4ae3103ce53ff6c00eb6cc540a40373a2 311016 libfastjson-dev_0.99.8-2_amd64.deb
+ 385a4baf3f5a66c5dc7010abec16b54e5ca694020a6b1af412a1b042cbb5a450 40160 libfastjson4-dbgsym_0.99.8-2_amd64.deb
+ a59a656db8a14c445224fa192b32f6df6c79d9caa449e59946e39c9d3cbdd280 51508 libfastjson4_0.99.8-2_amd64.deb
+ 23ef85db79e4020b9d5bf48a1500f69ab99a254478d38b97f860f562bbfbba3d 5588 libfastjson_0.99.8-2_amd64.buildinfo
+Files:
+ 927af89b250c6c15fc71903cb4832671 311016 libdevel optional libfastjson-dev_0.99.8-2_amd64.deb
+ a68413bf5c4c380481929a29a82ba5b7 40160 debug optional libfastjson4-dbgsym_0.99.8-2_amd64.deb
+ fcd8ce3c90cd5286c27ffe8dfd7ee2cb 51508 libs optional libfastjson4_0.99.8-2_amd64.deb
+ 6abec1218317e40816a4030261396b85 5588 libs optional libfastjson_0.99.8-2_amd64.buildinfo

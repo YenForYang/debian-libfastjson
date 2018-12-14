@@ -1,0 +1,12 @@
+b37e9f8657e9f0aec165385f506a397f  usr/include/libfastjson/atomic.h
+bb9e64af896bacd92453bea8a676a066  usr/include/libfastjson/json.h
+8d028c9042bd62fc59332d02434661ea  usr/include/libfastjson/json_object.h
+7db4ddc00eed6b03457036c5d41edbfd  usr/include/libfastjson/json_object_iterator.h
+7406ece2f4f86999d5aeace2c49efab2  usr/include/libfastjson/json_object_private.h
+8ba8ee83164a2c4598273c524e05583e  usr/include/libfastjson/json_tokener.h
+b1d3f6a6593d21b0be84f9a6a27b7cf4  usr/include/libfastjson/json_util.h
+ff174fcaac6a52d877324b65fc21c5d5  usr/lib/x86_64-linux-gnu/libfastjson.a
+4ae712dbebe32c107c15c19f8ecb6e30  usr/lib/x86_64-linux-gnu/pkgconfig/libfastjson.pc
+967f73a594c1cceb82e06129fc3b4d63  usr/share/doc/libfastjson-dev/changelog.Debian.gz
+73c451751def3704ae02437952074034  usr/share/doc/libfastjson-dev/changelog.gz
+d118a922ec40966b51591aafa4d175dd  usr/share/doc/libfastjson-dev/copyright

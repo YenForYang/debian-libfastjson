@@ -1,0 +1,13 @@
+Package: libfastjson4-dbgsym
+Source: libfastjson
+Version: 0.99.8-2
+Auto-Built-Package: debug-symbols
+Architecture: amd64
+Maintainer: Michael Biebl <biebl@debian.org>
+Installed-Size: 61
+Depends: libfastjson4 (= 0.99.8-2)
+Section: debug
+Priority: optional
+Multi-Arch: same
+Description: debug symbols for libfastjson4
+Build-Ids: 6c20e01e6fab095c054082650f1b186abce074b6

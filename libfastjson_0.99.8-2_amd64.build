@@ -1,0 +1,393 @@
+ dpkg-buildpackage -D -us -uc -ui -b -Jauto -Pnobiarch,nocheck,nodoc
+dpkg-buildpackage: info: source package libfastjson
+dpkg-buildpackage: info: source version 0.99.8-2
+dpkg-buildpackage: info: source distribution unstable
+dpkg-buildpackage: info: source changed by Michael Biebl <biebl@debian.org>
+ dpkg-source --before-build .
+dpkg-buildpackage: info: host architecture amd64
+ debian/rules clean
+dh clean
+   dh_clean
+ debian/rules binary
+dh binary
+   dh_update_autotools_config
+   dh_autoreconf
+libtoolize: putting auxiliary files in '.'.
+libtoolize: copying file './ltmain.sh'
+libtoolize: putting macros in AC_CONFIG_MACRO_DIRS, 'm4'.
+libtoolize: copying file 'm4/libtool.m4'
+libtoolize: copying file 'm4/ltoptions.m4'
+libtoolize: copying file 'm4/ltsugar.m4'
+libtoolize: copying file 'm4/ltversion.m4'
+libtoolize: copying file 'm4/lt~obsolete.m4'
+configure.ac:27: installing './compile'
+configure.ac:24: installing './missing'
+Makefile.am: installing './depcomp'
+   dh_auto_configure
+	./configure --build=x86_64-linux-gnu --prefix=/usr --includedir=\${prefix}/include --mandir=\${prefix}/share/man --infodir=\${prefix}/share/info --sysconfdir=/etc --localstatedir=/var --disable-silent-rules --libdir=\${prefix}/lib/x86_64-linux-gnu --libexecdir=\${prefix}/lib/x86_64-linux-gnu --disable-maintainer-mode --disable-dependency-tracking
+configure: WARNING: unrecognized options: --disable-maintainer-mode
+configure: loading site script /usr/share/config.site
+checking for a BSD-compatible install... /usr/bin/install
+checking whether build environment is sane... yes
+checking for a thread-safe mkdir -p... /bin/mkdir -p
+checking for gawk... (cached) gawk
+checking whether make sets $(MAKE)... (cached) yes
+checking whether make supports nested variables... (cached) yes
+checking whether make supports the include directive... yes (GNU style)
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... (cached) o
+checking whether we are using the GNU C compiler... (cached) yes
+checking whether icc accepts -g... (cached) yes
+checking for icc option to accept ISO C89... none needed
+checking whether icc understands -c and -o together... (cached) yes
+checking dependency style of icc... (cached) gcc3
+checking for icc option to accept ISO C99... none needed
+checking whether make sets $(MAKE)... (cached) yes
+checking how to run the C preprocessor... icc -E
+checking for grep that handles long lines and -e... (cached) /bin/grep
+checking for egrep... (cached) /bin/grep -E
+checking for ANSI C header files... (cached) yes
+checking for sys/types.h... (cached) yes
+checking for sys/stat.h... (cached) yes
+checking for stdlib.h... (cached) yes
+checking for string.h... (cached) yes
+checking for memory.h... (cached) yes
+checking for strings.h... (cached) yes
+checking for inttypes.h... (cached) yes
+checking for stdint.h... (cached) yes
+checking for unistd.h... (cached) yes
+checking minix/config.h usability... no
+checking minix/config.h presence... no
+checking for minix/config.h... no
+checking whether it is safe to define __EXTENSIONS__... (cached) yes
+checking for a sed that does not truncate output... (cached) /bin/sed
+checking whether C compiler accepts -Werror=unknown-warning-option... yes
+checking whether C compiler accepts -Wno-suggest-attribute=format... yes
+checking whether C compiler accepts -fno-strict-aliasing... yes
+checking whether C compiler accepts -Wall... yes
+checking whether C compiler accepts -Wextra... yes
+checking whether C compiler accepts -Wundef... yes
+checking whether C compiler accepts -Wnested-externs... yes
+checking whether C compiler accepts -Wwrite-strings... yes
+checking whether C compiler accepts -Wpointer-arith... yes
+checking whether C compiler accepts -Wmissing-declarations... yes
+checking whether C compiler accepts -Wmissing-prototypes... yes
+checking whether C compiler accepts -Wstrict-prototypes... yes
+checking whether C compiler accepts -Wredundant-decls... yes
+checking whether C compiler accepts -Wno-unused-parameter... yes
+checking whether C compiler accepts -Wno-missing-field-initializers... yes
+checking whether C compiler accepts -Wdeclaration-after-statement... yes
+checking whether C compiler accepts -Wformat=2... yes
+checking whether C compiler accepts -Wold-style-definition... yes
+checking whether C compiler accepts -Wcast-align... yes
+checking whether C compiler accepts -Wformat-nonliteral... yes
+checking whether C compiler accepts -Wformat-security... yes
+checking whether C compiler accepts -Wsign-compare... yes
+checking whether C compiler accepts -Wstrict-aliasing... yes
+checking whether C compiler accepts -Wshadow... yes
+checking whether C compiler accepts -Winline... yes
+checking whether C compiler accepts -Wpacked... yes
+checking whether C compiler accepts -Wmissing-format-attribute... yes
+checking whether C compiler accepts -Wmissing-noreturn... yes
+checking whether C compiler accepts -Winit-self... yes
+checking whether C compiler accepts -Wredundant-decls... (cached) yes
+checking whether C compiler accepts -Wmissing-include-dirs... yes
+checking whether C compiler accepts -Wunused-but-set-variable... yes
+checking whether C compiler accepts -Warray-bounds... yes
+checking whether C compiler accepts -Wimplicit-function-declaration... yes
+checking whether C compiler accepts -Wreturn-type... yes
+checking whether C compiler accepts -Wswitch-enum... yes
+checking whether C compiler accepts -Wswitch-default... yes
+checking whether C compiler accepts -Wno-error=unused-parameter... yes
+checking whether C compiler accepts -Wno-error=missing-field-initializers... yes
+checking whether C compiler accepts -Werror=unknown-warning-option... (cached) yes
+checking whether the linker accepts -Wl,--no-as-needed... yes
+checking whether the linker accepts -Wl,--fatal-warnings... yes
+checking whether the linker accepts -Wl,-fatal_warnings... no
+checking whether the linker accepts -Wl,--no-as-needed... yes
+RDRAND Hardware RNG Hash Seed disabled. Use --enable-rdrand to enable
+checking whether make supports nested variables... (cached) yes
+checking for ANSI C header files... (cached) yes
+checking for fcntl.h... (cached) yes
+checking for limits.h... (cached) yes
+checking for strings.h... (cached) yes
+checking for syslog.h... (cached) yes
+checking for unistd.h... (cached) yes
+checking for sys/cdefs.h... (cached) yes
+checking for sys/param.h... (cached) yes
+checking for stdarg.h... (cached) yes
+checking for locale.h... (cached) yes
+checking for endian.h... (cached) yes
+checking for an ANSI C-conforming const... (cached) yes
+checking for size_t... (cached) yes
+checking whether the compiler provides atomic builtins... yes
+checking whether the compiler provides atomic builtins for 64 bit data types... yes
+checking for vprintf... (cached) yes
+checking for _doprnt... no
+checking for working memcmp... (cached) yes
+checking for strcasecmp... (cached) yes
+checking for strdup... (cached) yes
+checking for strerror... (cached) yes
+checking for snprintf... (cached) yes
+checking for vsnprintf... (cached) yes
+checking for vasprintf... (cached) yes
+checking for open... (cached) yes
+checking for vsyslog... yes
+checking for strncasecmp... (cached) yes
+checking for setlocale... (cached) yes
+checking if .gnu.warning accepts long strings... no
+checking build system type... (cached) x86_64-pc-linux-gnu
+checking host system type... (cached) x86_64-pc-linux-gnu
+checking how to print strings... printf
+checking for a sed that does not truncate output... (cached) /bin/sed
+checking for fgrep... (cached) /bin/grep -F
+checking for ld used by icc... (cached) xild -m elf_x86_64
+checking if the linker (xild -m elf_x86_64) is GNU ld... (cached) yes
+checking for BSD- or MS-compatible name lister (nm)... (cached) /usr/bin/x86_64-linux-gnu-nm -B
+checking the name lister (/usr/bin/x86_64-linux-gnu-nm -B) interface... (cached) BSD nm
+checking whether ln -s works... yes
+checking the maximum length of command line arguments... (cached) 1572864
+checking how to convert x86_64-pc-linux-gnu file names to x86_64-pc-linux-gnu format... func_convert_file_noop
+checking how to convert x86_64-pc-linux-gnu file names to toolchain format... func_convert_file_noop
+checking for xild -m elf_x86_64 option to reload object files... (cached) -r
+checking how to recognize dependent libraries... pass_all
+checking for dlltool... (cached) dlltool
+checking how to associate runtime and link libraries... (cached) printf %s\n
+checking for archiver @FILE support... (cached) @
+checking for strip... (cached) x86_64-linux-gnu-strip
+checking for ranlib... (cached) /usr/bin/x86_64-linux-gnu-ranlib
+checking command to parse /usr/bin/x86_64-linux-gnu-nm -B output from icc object... ok
+checking for sysroot... no
+checking for a working dd... (cached) /bin/dd
+checking how to truncate binary pipes... /bin/dd bs=4096 count=1
+checking for mt... (cached) mt
+checking if mt is a manifest tool... no
+checking for dlfcn.h... (cached) yes
+checking for objdir... (cached) .libs
+checking if icc supports -fno-rtti -fno-exceptions... (cached) yes
+checking for icc option to produce PIC... (cached) -fpic
+checking if icc PIC flag -fpic works... (cached) yes
+checking if icc static flag -static works... (cached) yes
+checking if icc supports -c -o file.o... (cached) yes
+checking if icc supports -c -o file.o... (cached) yes
+checking whether the icc linker (xild -m elf_x86_64 -m elf_x86_64) supports shared libraries... xild: warning #10013: no objects specified for multi-file optimization
+xild: executing 'ld'
+yes
+checking whether -lc should be explicitly linked in... no
+checking dynamic linker characteristics... (cached) GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking whether stripping libraries is possible... yes
+checking if libtool supports shared libraries... yes
+checking whether to build shared libraries... yes
+checking whether to build static libraries... yes
+checking for -Bsymbolic-functions linker flag... yes
+checking that generated files are newer than configure... done
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating libfastjson.pc
+config.status: creating libfastjson-uninstalled.pc
+config.status: creating tests/Makefile
+config.status: creating config.h
+config.status: executing depfiles commands
+config.status: executing libtool commands
+configure: WARNING: unrecognized options: --disable-maintainer-mode
+   dh_auto_build
+	make -j8
+make[1]: Entering directory '/dev/shm/libfastjson/libfastjson-0.99.8'
+make  all-recursive
+make[2]: Entering directory '/dev/shm/libfastjson/libfastjson-0.99.8'
+Making all in .
+make[3]: Entering directory '/dev/shm/libfastjson/libfastjson-0.99.8'
+/bin/bash ./libtool  --tag=CC   --mode=compile icc -DHAVE_CONFIG_H -I.   -Wdate-time -D_FORTIFY_SOURCE=2 -fno-strict-aliasing -Wall -Wextra -Wundef -Wnested-externs -Wwrite-strings -Wpointer-arith -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wredundant-decls -Wno-unused-parameter -Wno-missing-field-initializers -Wdeclaration-after-statement -Wformat=2 -Wold-style-definition -Wcast-align -Wformat-nonliteral -Wformat-security -Wsign-compare -Wstrict-aliasing -Wshadow -Winline -Wpacked -Wmissing-format-attribute -Wmissing-noreturn -Winit-self -Wmissing-include-dirs -Wunused-but-set-variable -Warray-bounds -Wimplicit-function-declaration -Wreturn-type -Wswitch-enum -Wswitch-default -Wno-error=unused-parameter -Wno-error=missing-field-initializers -g -O2 -fdebug-prefix-map=/dev/shm/libfastjson/libfastjson-0.99.8=. -fstack-protector-strong -Wformat -Werror=format-security -march=native -pipe -c -o libfastjson_la-json_version.lo `test -f 'json_version.c' || echo './'`json_version.c
+/bin/bash ./libtool  --tag=CC   --mode=compile icc -DHAVE_CONFIG_H -I.   -Wdate-time -D_FORTIFY_SOURCE=2 -fno-strict-aliasing -Wall -Wextra -Wundef -Wnested-externs -Wwrite-strings -Wpointer-arith -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wredundant-decls -Wno-unused-parameter -Wno-missing-field-initializers -Wdeclaration-after-statement -Wformat=2 -Wold-style-definition -Wcast-align -Wformat-nonliteral -Wformat-security -Wsign-compare -Wstrict-aliasing -Wshadow -Winline -Wpacked -Wmissing-format-attribute -Wmissing-noreturn -Winit-self -Wmissing-include-dirs -Wunused-but-set-variable -Warray-bounds -Wimplicit-function-declaration -Wreturn-type -Wswitch-enum -Wswitch-default -Wno-error=unused-parameter -Wno-error=missing-field-initializers -g -O2 -fdebug-prefix-map=/dev/shm/libfastjson/libfastjson-0.99.8=. -fstack-protector-strong -Wformat -Werror=format-security -march=native -pipe -c -o libfastjson_la-json_object.lo `test -f 'json_object.c' || echo './'`json_object.c
+/bin/bash ./libtool  --tag=CC   --mode=compile icc -DHAVE_CONFIG_H -I.   -Wdate-time -D_FORTIFY_SOURCE=2 -fno-strict-aliasing -Wall -Wextra -Wundef -Wnested-externs -Wwrite-strings -Wpointer-arith -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wredundant-decls -Wno-unused-parameter -Wno-missing-field-initializers -Wdeclaration-after-statement -Wformat=2 -Wold-style-definition -Wcast-align -Wformat-nonliteral -Wformat-security -Wsign-compare -Wstrict-aliasing -Wshadow -Winline -Wpacked -Wmissing-format-attribute -Wmissing-noreturn -Winit-self -Wmissing-include-dirs -Wunused-but-set-variable -Warray-bounds -Wimplicit-function-declaration -Wreturn-type -Wswitch-enum -Wswitch-default -Wno-error=unused-parameter -Wno-error=missing-field-initializers -g -O2 -fdebug-prefix-map=/dev/shm/libfastjson/libfastjson-0.99.8=. -fstack-protector-strong -Wformat -Werror=format-security -march=native -pipe -c -o libfastjson_la-json_print.lo `test -f 'json_print.c' || echo './'`json_print.c
+/bin/bash ./libtool  --tag=CC   --mode=compile icc -DHAVE_CONFIG_H -I.   -Wdate-time -D_FORTIFY_SOURCE=2 -fno-strict-aliasing -Wall -Wextra -Wundef -Wnested-externs -Wwrite-strings -Wpointer-arith -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wredundant-decls -Wno-unused-parameter -Wno-missing-field-initializers -Wdeclaration-after-statement -Wformat=2 -Wold-style-definition -Wcast-align -Wformat-nonliteral -Wformat-security -Wsign-compare -Wstrict-aliasing -Wshadow -Winline -Wpacked -Wmissing-format-attribute -Wmissing-noreturn -Winit-self -Wmissing-include-dirs -Wunused-but-set-variable -Warray-bounds -Wimplicit-function-declaration -Wreturn-type -Wswitch-enum -Wswitch-default -Wno-error=unused-parameter -Wno-error=missing-field-initializers -g -O2 -fdebug-prefix-map=/dev/shm/libfastjson/libfastjson-0.99.8=. -fstack-protector-strong -Wformat -Werror=format-security -march=native -pipe -c -o libfastjson_la-json_object_iterator.lo `test -f 'json_object_iterator.c' || echo './'`json_object_iterator.c
+/bin/bash ./libtool  --tag=CC   --mode=compile icc -DHAVE_CONFIG_H -I.   -Wdate-time -D_FORTIFY_SOURCE=2 -fno-strict-aliasing -Wall -Wextra -Wundef -Wnested-externs -Wwrite-strings -Wpointer-arith -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wredundant-decls -Wno-unused-parameter -Wno-missing-field-initializers -Wdeclaration-after-statement -Wformat=2 -Wold-style-definition -Wcast-align -Wformat-nonliteral -Wformat-security -Wsign-compare -Wstrict-aliasing -Wshadow -Winline -Wpacked -Wmissing-format-attribute -Wmissing-noreturn -Winit-self -Wmissing-include-dirs -Wunused-but-set-variable -Warray-bounds -Wimplicit-function-declaration -Wreturn-type -Wswitch-enum -Wswitch-default -Wno-error=unused-parameter -Wno-error=missing-field-initializers -g -O2 -fdebug-prefix-map=/dev/shm/libfastjson/libfastjson-0.99.8=. -fstack-protector-strong -Wformat -Werror=format-security -march=native -pipe -c -o libfastjson_la-json_tokener.lo `test -f 'json_tokener.c' || echo './'`json_tokener.c
+/bin/bash ./libtool  --tag=CC   --mode=compile icc -DHAVE_CONFIG_H -I.   -Wdate-time -D_FORTIFY_SOURCE=2 -fno-strict-aliasing -Wall -Wextra -Wundef -Wnested-externs -Wwrite-strings -Wpointer-arith -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wredundant-decls -Wno-unused-parameter -Wno-missing-field-initializers -Wdeclaration-after-statement -Wformat=2 -Wold-style-definition -Wcast-align -Wformat-nonliteral -Wformat-security -Wsign-compare -Wstrict-aliasing -Wshadow -Winline -Wpacked -Wmissing-format-attribute -Wmissing-noreturn -Winit-self -Wmissing-include-dirs -Wunused-but-set-variable -Warray-bounds -Wimplicit-function-declaration -Wreturn-type -Wswitch-enum -Wswitch-default -Wno-error=unused-parameter -Wno-error=missing-field-initializers -g -O2 -fdebug-prefix-map=/dev/shm/libfastjson/libfastjson-0.99.8=. -fstack-protector-strong -Wformat -Werror=format-security -march=native -pipe -c -o libfastjson_la-json_util.lo `test -f 'json_util.c' || echo './'`json_util.c
+/bin/bash ./libtool  --tag=CC   --mode=compile icc -DHAVE_CONFIG_H -I.   -Wdate-time -D_FORTIFY_SOURCE=2 -fno-strict-aliasing -Wall -Wextra -Wundef -Wnested-externs -Wwrite-strings -Wpointer-arith -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wredundant-decls -Wno-unused-parameter -Wno-missing-field-initializers -Wdeclaration-after-statement -Wformat=2 -Wold-style-definition -Wcast-align -Wformat-nonliteral -Wformat-security -Wsign-compare -Wstrict-aliasing -Wshadow -Winline -Wpacked -Wmissing-format-attribute -Wmissing-noreturn -Winit-self -Wmissing-include-dirs -Wunused-but-set-variable -Warray-bounds -Wimplicit-function-declaration -Wreturn-type -Wswitch-enum -Wswitch-default -Wno-error=unused-parameter -Wno-error=missing-field-initializers -g -O2 -fdebug-prefix-map=/dev/shm/libfastjson/libfastjson-0.99.8=. -fstack-protector-strong -Wformat -Werror=format-security -march=native -pipe -c -o libfastjson_internal_la-arraylist.lo `test -f 'arraylist.c' || echo './'`arraylist.c
+/bin/bash ./libtool  --tag=CC   --mode=compile icc -DHAVE_CONFIG_H -I.   -Wdate-time -D_FORTIFY_SOURCE=2 -fno-strict-aliasing -Wall -Wextra -Wundef -Wnested-externs -Wwrite-strings -Wpointer-arith -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wredundant-decls -Wno-unused-parameter -Wno-missing-field-initializers -Wdeclaration-after-statement -Wformat=2 -Wold-style-definition -Wcast-align -Wformat-nonliteral -Wformat-security -Wsign-compare -Wstrict-aliasing -Wshadow -Winline -Wpacked -Wmissing-format-attribute -Wmissing-noreturn -Winit-self -Wmissing-include-dirs -Wunused-but-set-variable -Warray-bounds -Wimplicit-function-declaration -Wreturn-type -Wswitch-enum -Wswitch-default -Wno-error=unused-parameter -Wno-error=missing-field-initializers -g -O2 -fdebug-prefix-map=/dev/shm/libfastjson/libfastjson-0.99.8=. -fstack-protector-strong -Wformat -Werror=format-security -march=native -pipe -c -o libfastjson_internal_la-debug.lo `test -f 'debug.c' || echo './'`debug.c
+libtool: compile:  icc -DHAVE_CONFIG_H -I. -Wdate-time -D_FORTIFY_SOURCE=2 -fno-strict-aliasing -Wall -Wextra -Wundef -Wnested-externs -Wwrite-strings -Wpointer-arith -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wredundant-decls -Wno-unused-parameter -Wno-missing-field-initializers -Wdeclaration-after-statement -Wformat=2 -Wold-style-definition -Wcast-align -Wformat-nonliteral -Wformat-security -Wsign-compare -Wstrict-aliasing -Wshadow -Winline -Wpacked -Wmissing-format-attribute -Wmissing-noreturn -Winit-self -Wmissing-include-dirs -Wunused-but-set-variable -Warray-bounds -Wimplicit-function-declaration -Wreturn-type -Wswitch-enum -Wswitch-default -Wno-error=unused-parameter -Wno-error=missing-field-initializers -g -O2 -fdebug-prefix-map=/dev/shm/libfastjson/libfastjson-0.99.8=. -fstack-protector-strong -Wformat -Werror=format-security -march=native -pipe -c json_version.c  -fpic -o .libs/libfastjson_la-json_version.o
+libtool: compile:  icc -DHAVE_CONFIG_H -I. -Wdate-time -D_FORTIFY_SOURCE=2 -fno-strict-aliasing -Wall -Wextra -Wundef -Wnested-externs -Wwrite-strings -Wpointer-arith -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wredundant-decls -Wno-unused-parameter -Wno-missing-field-initializers -Wdeclaration-after-statement -Wformat=2 -Wold-style-definition -Wcast-align -Wformat-nonliteral -Wformat-security -Wsign-compare -Wstrict-aliasing -Wshadow -Winline -Wpacked -Wmissing-format-attribute -Wmissing-noreturn -Winit-self -Wmissing-include-dirs -Wunused-but-set-variable -Warray-bounds -Wimplicit-function-declaration -Wreturn-type -Wswitch-enum -Wswitch-default -Wno-error=unused-parameter -Wno-error=missing-field-initializers -g -O2 -fdebug-prefix-map=/dev/shm/libfastjson/libfastjson-0.99.8=. -fstack-protector-strong -Wformat -Werror=format-security -march=native -pipe -c json_object_iterator.c  -fpic -o .libs/libfastjson_la-json_object_iterator.o
+libtool: compile:  icc -DHAVE_CONFIG_H -I. -Wdate-time -D_FORTIFY_SOURCE=2 -fno-strict-aliasing -Wall -Wextra -Wundef -Wnested-externs -Wwrite-strings -Wpointer-arith -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wredundant-decls -Wno-unused-parameter -Wno-missing-field-initializers -Wdeclaration-after-statement -Wformat=2 -Wold-style-definition -Wcast-align -Wformat-nonliteral -Wformat-security -Wsign-compare -Wstrict-aliasing -Wshadow -Winline -Wpacked -Wmissing-format-attribute -Wmissing-noreturn -Winit-self -Wmissing-include-dirs -Wunused-but-set-variable -Warray-bounds -Wimplicit-function-declaration -Wreturn-type -Wswitch-enum -Wswitch-default -Wno-error=unused-parameter -Wno-error=missing-field-initializers -g -O2 -fdebug-prefix-map=/dev/shm/libfastjson/libfastjson-0.99.8=. -fstack-protector-strong -Wformat -Werror=format-security -march=native -pipe -c json_object.c  -fpic -o .libs/libfastjson_la-json_object.o
+libtool: compile:  icc -DHAVE_CONFIG_H -I. -Wdate-time -D_FORTIFY_SOURCE=2 -fno-strict-aliasing -Wall -Wextra -Wundef -Wnested-externs -Wwrite-strings -Wpointer-arith -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wredundant-decls -Wno-unused-parameter -Wno-missing-field-initializers -Wdeclaration-after-statement -Wformat=2 -Wold-style-definition -Wcast-align -Wformat-nonliteral -Wformat-security -Wsign-compare -Wstrict-aliasing -Wshadow -Winline -Wpacked -Wmissing-format-attribute -Wmissing-noreturn -Winit-self -Wmissing-include-dirs -Wunused-but-set-variable -Warray-bounds -Wimplicit-function-declaration -Wreturn-type -Wswitch-enum -Wswitch-default -Wno-error=unused-parameter -Wno-error=missing-field-initializers -g -O2 -fdebug-prefix-map=/dev/shm/libfastjson/libfastjson-0.99.8=. -fstack-protector-strong -Wformat -Werror=format-security -march=native -pipe -c json_print.c  -fpic -o .libs/libfastjson_la-json_print.o
+libtool: compile:  icc -DHAVE_CONFIG_H -I. -Wdate-time -D_FORTIFY_SOURCE=2 -fno-strict-aliasing -Wall -Wextra -Wundef -Wnested-externs -Wwrite-strings -Wpointer-arith -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wredundant-decls -Wno-unused-parameter -Wno-missing-field-initializers -Wdeclaration-after-statement -Wformat=2 -Wold-style-definition -Wcast-align -Wformat-nonliteral -Wformat-security -Wsign-compare -Wstrict-aliasing -Wshadow -Winline -Wpacked -Wmissing-format-attribute -Wmissing-noreturn -Winit-self -Wmissing-include-dirs -Wunused-but-set-variable -Warray-bounds -Wimplicit-function-declaration -Wreturn-type -Wswitch-enum -Wswitch-default -Wno-error=unused-parameter -Wno-error=missing-field-initializers -g -O2 -fdebug-prefix-map=/dev/shm/libfastjson/libfastjson-0.99.8=. -fstack-protector-strong -Wformat -Werror=format-security -march=native -pipe -c json_tokener.c  -fpic -o .libs/libfastjson_la-json_tokener.o
+json_version.c
+libtool: compile:  icc -DHAVE_CONFIG_H -I. -Wdate-time -D_FORTIFY_SOURCE=2 -fno-strict-aliasing -Wall -Wextra -Wundef -Wnested-externs -Wwrite-strings -Wpointer-arith -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wredundant-decls -Wno-unused-parameter -Wno-missing-field-initializers -Wdeclaration-after-statement -Wformat=2 -Wold-style-definition -Wcast-align -Wformat-nonliteral -Wformat-security -Wsign-compare -Wstrict-aliasing -Wshadow -Winline -Wpacked -Wmissing-format-attribute -Wmissing-noreturn -Winit-self -Wmissing-include-dirs -Wunused-but-set-variable -Warray-bounds -Wimplicit-function-declaration -Wreturn-type -Wswitch-enum -Wswitch-default -Wno-error=unused-parameter -Wno-error=missing-field-initializers -g -O2 -fdebug-prefix-map=/dev/shm/libfastjson/libfastjson-0.99.8=. -fstack-protector-strong -Wformat -Werror=format-security -march=native -pipe -c debug.c  -fpic -o .libs/libfastjson_internal_la-debug.o
+json_object_iterator.c
+libtool: compile:  icc -DHAVE_CONFIG_H -I. -Wdate-time -D_FORTIFY_SOURCE=2 -fno-strict-aliasing -Wall -Wextra -Wundef -Wnested-externs -Wwrite-strings -Wpointer-arith -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wredundant-decls -Wno-unused-parameter -Wno-missing-field-initializers -Wdeclaration-after-statement -Wformat=2 -Wold-style-definition -Wcast-align -Wformat-nonliteral -Wformat-security -Wsign-compare -Wstrict-aliasing -Wshadow -Winline -Wpacked -Wmissing-format-attribute -Wmissing-noreturn -Winit-self -Wmissing-include-dirs -Wunused-but-set-variable -Warray-bounds -Wimplicit-function-declaration -Wreturn-type -Wswitch-enum -Wswitch-default -Wno-error=unused-parameter -Wno-error=missing-field-initializers -g -O2 -fdebug-prefix-map=/dev/shm/libfastjson/libfastjson-0.99.8=. -fstack-protector-strong -Wformat -Werror=format-security -march=native -pipe -c json_util.c  -fpic -o .libs/libfastjson_la-json_util.o
+libtool: compile:  icc -DHAVE_CONFIG_H -I. -Wdate-time -D_FORTIFY_SOURCE=2 -fno-strict-aliasing -Wall -Wextra -Wundef -Wnested-externs -Wwrite-strings -Wpointer-arith -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wredundant-decls -Wno-unused-parameter -Wno-missing-field-initializers -Wdeclaration-after-statement -Wformat=2 -Wold-style-definition -Wcast-align -Wformat-nonliteral -Wformat-security -Wsign-compare -Wstrict-aliasing -Wshadow -Winline -Wpacked -Wmissing-format-attribute -Wmissing-noreturn -Winit-self -Wmissing-include-dirs -Wunused-but-set-variable -Warray-bounds -Wimplicit-function-declaration -Wreturn-type -Wswitch-enum -Wswitch-default -Wno-error=unused-parameter -Wno-error=missing-field-initializers -g -O2 -fdebug-prefix-map=/dev/shm/libfastjson/libfastjson-0.99.8=. -fstack-protector-strong -Wformat -Werror=format-security -march=native -pipe -c arraylist.c  -fpic -o .libs/libfastjson_internal_la-arraylist.o
+json_print.c
+json_object.c
+json_tokener.c
+json_util.c
+arraylist.c
+debug.c
+libtool: compile:  icc -DHAVE_CONFIG_H -I. -Wdate-time -D_FORTIFY_SOURCE=2 -fno-strict-aliasing -Wall -Wextra -Wundef -Wnested-externs -Wwrite-strings -Wpointer-arith -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wredundant-decls -Wno-unused-parameter -Wno-missing-field-initializers -Wdeclaration-after-statement -Wformat=2 -Wold-style-definition -Wcast-align -Wformat-nonliteral -Wformat-security -Wsign-compare -Wstrict-aliasing -Wshadow -Winline -Wpacked -Wmissing-format-attribute -Wmissing-noreturn -Winit-self -Wmissing-include-dirs -Wunused-but-set-variable -Warray-bounds -Wimplicit-function-declaration -Wreturn-type -Wswitch-enum -Wswitch-default -Wno-error=unused-parameter -Wno-error=missing-field-initializers -g -O2 -fdebug-prefix-map=/dev/shm/libfastjson/libfastjson-0.99.8=. -fstack-protector-strong -Wformat -Werror=format-security -march=native -pipe -c json_version.c -o libfastjson_la-json_version.o >/dev/null 2>&1
+libtool: compile:  icc -DHAVE_CONFIG_H -I. -Wdate-time -D_FORTIFY_SOURCE=2 -fno-strict-aliasing -Wall -Wextra -Wundef -Wnested-externs -Wwrite-strings -Wpointer-arith -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wredundant-decls -Wno-unused-parameter -Wno-missing-field-initializers -Wdeclaration-after-statement -Wformat=2 -Wold-style-definition -Wcast-align -Wformat-nonliteral -Wformat-security -Wsign-compare -Wstrict-aliasing -Wshadow -Winline -Wpacked -Wmissing-format-attribute -Wmissing-noreturn -Winit-self -Wmissing-include-dirs -Wunused-but-set-variable -Warray-bounds -Wimplicit-function-declaration -Wreturn-type -Wswitch-enum -Wswitch-default -Wno-error=unused-parameter -Wno-error=missing-field-initializers -g -O2 -fdebug-prefix-map=/dev/shm/libfastjson/libfastjson-0.99.8=. -fstack-protector-strong -Wformat -Werror=format-security -march=native -pipe -c json_object_iterator.c -o libfastjson_la-json_object_iterator.o >/dev/null 2>&1
+libtool: compile:  icc -DHAVE_CONFIG_H -I. -Wdate-time -D_FORTIFY_SOURCE=2 -fno-strict-aliasing -Wall -Wextra -Wundef -Wnested-externs -Wwrite-strings -Wpointer-arith -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wredundant-decls -Wno-unused-parameter -Wno-missing-field-initializers -Wdeclaration-after-statement -Wformat=2 -Wold-style-definition -Wcast-align -Wformat-nonliteral -Wformat-security -Wsign-compare -Wstrict-aliasing -Wshadow -Winline -Wpacked -Wmissing-format-attribute -Wmissing-noreturn -Winit-self -Wmissing-include-dirs -Wunused-but-set-variable -Warray-bounds -Wimplicit-function-declaration -Wreturn-type -Wswitch-enum -Wswitch-default -Wno-error=unused-parameter -Wno-error=missing-field-initializers -g -O2 -fdebug-prefix-map=/dev/shm/libfastjson/libfastjson-0.99.8=. -fstack-protector-strong -Wformat -Werror=format-security -march=native -pipe -c arraylist.c -o libfastjson_internal_la-arraylist.o >/dev/null 2>&1
+json_print.c(331): warning #311: declaration may not appear after executable statement in block
+  	struct fjson_object_iterator it = fjson_object_iter_begin(jso);
+  	^
+
+json_print.c(332): warning #311: declaration may not appear after executable statement in block
+  	struct fjson_object_iterator itEnd = fjson_object_iter_end(jso);
+  	^
+
+json_print.c(397): warning #2279: printf/scanf format not a string literal and no format arguments
+  	if(isinf(jso->o.c_double.value)) return buffer_printf(buffer, jso->o.c_double.value > 0 ? "Infinity" : "-Infinity");
+  	                                                                                                                  ^
+
+json_print.c(521): warning #311: declaration may not appear after executable statement in block
+  	size_t result = write(jso, 0, flags, &object);
+  	^
+
+json_object.c(196): warning #311: declaration may not appear after executable statement in block
+  	const int cnt = ATOMIC_DEC_AND_FETCH(&jso->_ref_count, &jso->_mut_ref_count);
+  	^
+
+json_tokener.c(317): warning #311: declaration may not appear after executable statement in block
+json_object.c(297): warning #311: declaration may not appear after executable statement in block
+  	struct fjson_object_iterator it = fjson_object_iter_begin(jso);
+  	^
+
+  				ATTR_FALLTHROUGH
+json_object.c(298): warning #311: declaration may not appear after executable statement in block
+  	struct fjson_object_iterator itEnd = fjson_object_iter_end(jso);
+  	^
+
+  				^
+
+json_tokener.c(317): warning #1292: unknown attribute "fallthrough"
+  				ATTR_FALLTHROUGH
+  				^
+
+json_tokener.c(371): warning #311: declaration may not appear after executable statement in block
+  				char *infbuf = tok->pb->buf;
+  				^
+
+libtool: compile:  icc -DHAVE_CONFIG_H -I. -Wdate-time -D_FORTIFY_SOURCE=2 -fno-strict-aliasing -Wall -Wextra -Wundef -Wnested-externs -Wwrite-strings -Wpointer-arith -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wredundant-decls -Wno-unused-parameter -Wno-missing-field-initializers -Wdeclaration-after-statement -Wformat=2 -Wold-style-definition -Wcast-align -Wformat-nonliteral -Wformat-security -Wsign-compare -Wstrict-aliasing -Wshadow -Winline -Wpacked -Wmissing-format-attribute -Wmissing-noreturn -Winit-self -Wmissing-include-dirs -Wunused-but-set-variable -Warray-bounds -Wimplicit-function-declaration -Wreturn-type -Wswitch-enum -Wswitch-default -Wno-error=unused-parameter -Wno-error=missing-field-initializers -g -O2 -fdebug-prefix-map=/dev/shm/libfastjson/libfastjson-0.99.8=. -fstack-protector-strong -Wformat -Werror=format-security -march=native -pipe -c debug.c -o libfastjson_internal_la-debug.o >/dev/null 2>&1
+libtool: compile:  icc -DHAVE_CONFIG_H -I. -Wdate-time -D_FORTIFY_SOURCE=2 -fno-strict-aliasing -Wall -Wextra -Wundef -Wnested-externs -Wwrite-strings -Wpointer-arith -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wredundant-decls -Wno-unused-parameter -Wno-missing-field-initializers -Wdeclaration-after-statement -Wformat=2 -Wold-style-definition -Wcast-align -Wformat-nonliteral -Wformat-security -Wsign-compare -Wstrict-aliasing -Wshadow -Winline -Wpacked -Wmissing-format-attribute -Wmissing-noreturn -Winit-self -Wmissing-include-dirs -Wunused-but-set-variable -Warray-bounds -Wimplicit-function-declaration -Wreturn-type -Wswitch-enum -Wswitch-default -Wno-error=unused-parameter -Wno-error=missing-field-initializers -g -O2 -fdebug-prefix-map=/dev/shm/libfastjson/libfastjson-0.99.8=. -fstack-protector-strong -Wformat -Werror=format-security -march=native -pipe -c json_print.c -o libfastjson_la-json_print.o >/dev/null 2>&1
+json_object.c(418): warning #311: declaration may not appear after executable statement in block
+  	const int pg_idx = jso->o.c_obj.nelem % FJSON_OBJECT_CHLD_PG_SIZE;
+  	^
+
+/bin/bash ./libtool  --tag=CC   --mode=compile icc -DHAVE_CONFIG_H -I.   -Wdate-time -D_FORTIFY_SOURCE=2 -fno-strict-aliasing -Wall -Wextra -Wundef -Wnested-externs -Wwrite-strings -Wpointer-arith -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wredundant-decls -Wno-unused-parameter -Wno-missing-field-initializers -Wdeclaration-after-statement -Wformat=2 -Wold-style-definition -Wcast-align -Wformat-nonliteral -Wformat-security -Wsign-compare -Wstrict-aliasing -Wshadow -Winline -Wpacked -Wmissing-format-attribute -Wmissing-noreturn -Winit-self -Wmissing-include-dirs -Wunused-but-set-variable -Warray-bounds -Wimplicit-function-declaration -Wreturn-type -Wswitch-enum -Wswitch-default -Wno-error=unused-parameter -Wno-error=missing-field-initializers -g -O2 -fdebug-prefix-map=/dev/shm/libfastjson/libfastjson-0.99.8=. -fstack-protector-strong -Wformat -Werror=format-security -march=native -pipe -c -o libfastjson_internal_la-printbuf.lo `test -f 'printbuf.c' || echo './'`printbuf.c
+json_object.c(663): warning #311: declaration may not appear after executable statement in block
+  		ATTR_FALLTHROUGH
+  		^
+
+json_object.c(663): warning #1292: unknown attribute "fallthrough"
+  		ATTR_FALLTHROUGH
+  		^
+
+libtool: compile:  icc -DHAVE_CONFIG_H -I. -Wdate-time -D_FORTIFY_SOURCE=2 -fno-strict-aliasing -Wall -Wextra -Wundef -Wnested-externs -Wwrite-strings -Wpointer-arith -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wredundant-decls -Wno-unused-parameter -Wno-missing-field-initializers -Wdeclaration-after-statement -Wformat=2 -Wold-style-definition -Wcast-align -Wformat-nonliteral -Wformat-security -Wsign-compare -Wstrict-aliasing -Wshadow -Winline -Wpacked -Wmissing-format-attribute -Wmissing-noreturn -Winit-self -Wmissing-include-dirs -Wunused-but-set-variable -Warray-bounds -Wimplicit-function-declaration -Wreturn-type -Wswitch-enum -Wswitch-default -Wno-error=unused-parameter -Wno-error=missing-field-initializers -g -O2 -fdebug-prefix-map=/dev/shm/libfastjson/libfastjson-0.99.8=. -fstack-protector-strong -Wformat -Werror=format-security -march=native -pipe -c json_util.c -o libfastjson_la-json_util.o >/dev/null 2>&1
+libtool: compile:  icc -DHAVE_CONFIG_H -I. -Wdate-time -D_FORTIFY_SOURCE=2 -fno-strict-aliasing -Wall -Wextra -Wundef -Wnested-externs -Wwrite-strings -Wpointer-arith -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wredundant-decls -Wno-unused-parameter -Wno-missing-field-initializers -Wdeclaration-after-statement -Wformat=2 -Wold-style-definition -Wcast-align -Wformat-nonliteral -Wformat-security -Wsign-compare -Wstrict-aliasing -Wshadow -Winline -Wpacked -Wmissing-format-attribute -Wmissing-noreturn -Winit-self -Wmissing-include-dirs -Wunused-but-set-variable -Warray-bounds -Wimplicit-function-declaration -Wreturn-type -Wswitch-enum -Wswitch-default -Wno-error=unused-parameter -Wno-error=missing-field-initializers -g -O2 -fdebug-prefix-map=/dev/shm/libfastjson/libfastjson-0.99.8=. -fstack-protector-strong -Wformat -Werror=format-security -march=native -pipe -c json_object.c -o libfastjson_la-json_object.o >/dev/null 2>&1
+libtool: compile:  icc -DHAVE_CONFIG_H -I. -Wdate-time -D_FORTIFY_SOURCE=2 -fno-strict-aliasing -Wall -Wextra -Wundef -Wnested-externs -Wwrite-strings -Wpointer-arith -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wredundant-decls -Wno-unused-parameter -Wno-missing-field-initializers -Wdeclaration-after-statement -Wformat=2 -Wold-style-definition -Wcast-align -Wformat-nonliteral -Wformat-security -Wsign-compare -Wstrict-aliasing -Wshadow -Winline -Wpacked -Wmissing-format-attribute -Wmissing-noreturn -Winit-self -Wmissing-include-dirs -Wunused-but-set-variable -Warray-bounds -Wimplicit-function-declaration -Wreturn-type -Wswitch-enum -Wswitch-default -Wno-error=unused-parameter -Wno-error=missing-field-initializers -g -O2 -fdebug-prefix-map=/dev/shm/libfastjson/libfastjson-0.99.8=. -fstack-protector-strong -Wformat -Werror=format-security -march=native -pipe -c json_tokener.c -o libfastjson_la-json_tokener.o >/dev/null 2>&1
+libtool: compile:  icc -DHAVE_CONFIG_H -I. -Wdate-time -D_FORTIFY_SOURCE=2 -fno-strict-aliasing -Wall -Wextra -Wundef -Wnested-externs -Wwrite-strings -Wpointer-arith -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wredundant-decls -Wno-unused-parameter -Wno-missing-field-initializers -Wdeclaration-after-statement -Wformat=2 -Wold-style-definition -Wcast-align -Wformat-nonliteral -Wformat-security -Wsign-compare -Wstrict-aliasing -Wshadow -Winline -Wpacked -Wmissing-format-attribute -Wmissing-noreturn -Winit-self -Wmissing-include-dirs -Wunused-but-set-variable -Warray-bounds -Wimplicit-function-declaration -Wreturn-type -Wswitch-enum -Wswitch-default -Wno-error=unused-parameter -Wno-error=missing-field-initializers -g -O2 -fdebug-prefix-map=/dev/shm/libfastjson/libfastjson-0.99.8=. -fstack-protector-strong -Wformat -Werror=format-security -march=native -pipe -c printbuf.c  -fpic -o .libs/libfastjson_internal_la-printbuf.o
+printbuf.c
+libtool: compile:  icc -DHAVE_CONFIG_H -I. -Wdate-time -D_FORTIFY_SOURCE=2 -fno-strict-aliasing -Wall -Wextra -Wundef -Wnested-externs -Wwrite-strings -Wpointer-arith -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wredundant-decls -Wno-unused-parameter -Wno-missing-field-initializers -Wdeclaration-after-statement -Wformat=2 -Wold-style-definition -Wcast-align -Wformat-nonliteral -Wformat-security -Wsign-compare -Wstrict-aliasing -Wshadow -Winline -Wpacked -Wmissing-format-attribute -Wmissing-noreturn -Winit-self -Wmissing-include-dirs -Wunused-but-set-variable -Warray-bounds -Wimplicit-function-declaration -Wreturn-type -Wswitch-enum -Wswitch-default -Wno-error=unused-parameter -Wno-error=missing-field-initializers -g -O2 -fdebug-prefix-map=/dev/shm/libfastjson/libfastjson-0.99.8=. -fstack-protector-strong -Wformat -Werror=format-security -march=native -pipe -c printbuf.c -o libfastjson_internal_la-printbuf.o >/dev/null 2>&1
+/bin/bash ./libtool  --tag=CC   --mode=link icc -fno-strict-aliasing -Wall -Wextra -Wundef -Wnested-externs -Wwrite-strings -Wpointer-arith -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wredundant-decls -Wno-unused-parameter -Wno-missing-field-initializers -Wdeclaration-after-statement -Wformat=2 -Wold-style-definition -Wcast-align -Wformat-nonliteral -Wformat-security -Wsign-compare -Wstrict-aliasing -Wshadow -Winline -Wpacked -Wmissing-format-attribute -Wmissing-noreturn -Winit-self -Wmissing-include-dirs -Wunused-but-set-variable -Warray-bounds -Wimplicit-function-declaration -Wreturn-type -Wswitch-enum -Wswitch-default -Wno-error=unused-parameter -Wno-error=missing-field-initializers -g -O2 -fdebug-prefix-map=/dev/shm/libfastjson/libfastjson-0.99.8=. -fstack-protector-strong -Wformat -Werror=format-security -march=native -pipe  -Wl,-z,relro -Wl,--as-needed,--gc-sections,--relax -o libfastjson-internal.la  libfastjson_internal_la-arraylist.lo libfastjson_internal_la-debug.lo libfastjson_internal_la-printbuf.lo  
+libtool: link: xiar cru .libs/libfastjson-internal.a .libs/libfastjson_internal_la-arraylist.o .libs/libfastjson_internal_la-debug.o .libs/libfastjson_internal_la-printbuf.o 
+xiar: executing 'ar'
+ar: `u' modifier ignored since `D' is the default (see `U')
+libtool: link: /usr/bin/x86_64-linux-gnu-ranlib .libs/libfastjson-internal.a
+libtool: link: ( cd ".libs" && rm -f "libfastjson-internal.la" && ln -s "../libfastjson-internal.la" "libfastjson-internal.la" )
+/bin/bash ./libtool  --tag=CC   --mode=link icc -fno-strict-aliasing -Wall -Wextra -Wundef -Wnested-externs -Wwrite-strings -Wpointer-arith -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wredundant-decls -Wno-unused-parameter -Wno-missing-field-initializers -Wdeclaration-after-statement -Wformat=2 -Wold-style-definition -Wcast-align -Wformat-nonliteral -Wformat-security -Wsign-compare -Wstrict-aliasing -Wshadow -Winline -Wpacked -Wmissing-format-attribute -Wmissing-noreturn -Winit-self -Wmissing-include-dirs -Wunused-but-set-variable -Warray-bounds -Wimplicit-function-declaration -Wreturn-type -Wswitch-enum -Wswitch-default -Wno-error=unused-parameter -Wno-error=missing-field-initializers -g -O2 -fdebug-prefix-map=/dev/shm/libfastjson/libfastjson-0.99.8=. -fstack-protector-strong -Wformat -Werror=format-security -march=native -pipe -version-info 6:0:2 -export-symbols-regex '^fjson_.*' -no-undefined -Wl,-Bsymbolic-functions -Wl,-z,relro -Wl,--as-needed,--gc-sections,--relax -o libfastjson.la -rpath /usr/lib/x86_64-linux-gnu libfastjson_la-json_version.lo libfastjson_la-json_object.lo libfastjson_la-json_print.lo libfastjson_la-json_object_iterator.lo libfastjson_la-json_tokener.lo libfastjson_la-json_util.lo libfastjson-internal.la 
+libtool: link: /usr/bin/x86_64-linux-gnu-nm -B  .libs/libfastjson_la-json_version.o .libs/libfastjson_la-json_object.o .libs/libfastjson_la-json_print.o .libs/libfastjson_la-json_object_iterator.o .libs/libfastjson_la-json_tokener.o .libs/libfastjson_la-json_util.o   ./.libs/libfastjson-internal.a | sed -n -e 's/^.*[	 ]\([ABCDGIRSTW][ABCDGIRSTW]*\)[	 ][	 ]*\([_A-Za-z][_A-Za-z0-9]*\)$/\1 \2 \2/p' | sed '/ __gnu_lto/d' | /bin/sed 's/.* //' | sort | uniq > .libs/libfastjson.exp
+libtool: link: /bin/grep -E -e "^fjson_.*" ".libs/libfastjson.exp" > ".libs/libfastjson.expT"
+libtool: link: mv -f ".libs/libfastjson.expT" ".libs/libfastjson.exp"
+libtool: link: echo "{ global:" > .libs/libfastjson.ver
+libtool: link:  cat .libs/libfastjson.exp | sed -e "s/\(.*\)/\1;/" >> .libs/libfastjson.ver
+libtool: link:  echo "local: *; };" >> .libs/libfastjson.ver
+libtool: link:  icc -shared  -fpic  .libs/libfastjson_la-json_version.o .libs/libfastjson_la-json_object.o .libs/libfastjson_la-json_print.o .libs/libfastjson_la-json_object_iterator.o .libs/libfastjson_la-json_tokener.o .libs/libfastjson_la-json_util.o  -Wl,--whole-archive ./.libs/libfastjson-internal.a -Wl,--no-whole-archive   -g -O2 -fstack-protector-strong -march=native -Wl,-Bsymbolic-functions -Wl,-z -Wl,relro -Wl,--as-needed -Wl,--gc-sections -Wl,--relax   -Wl,-soname -Wl,libfastjson.so.4 -Wl,-version-script -Wl,.libs/libfastjson.ver -o .libs/libfastjson.so.4.2.0
+libtool: link: (cd ".libs" && rm -f "libfastjson.so.4" && ln -s "libfastjson.so.4.2.0" "libfastjson.so.4")
+libtool: link: (cd ".libs" && rm -f "libfastjson.so" && ln -s "libfastjson.so.4.2.0" "libfastjson.so")
+libtool: link: (cd .libs/libfastjson.lax/libfastjson-internal.a && xiar x "/dev/shm/libfastjson/libfastjson-0.99.8/./.libs/libfastjson-internal.a")
+xiar: executing 'ar'
+xiar: executing 'ar'
+libtool: link: xiar cru .libs/libfastjson.a  libfastjson_la-json_version.o libfastjson_la-json_object.o libfastjson_la-json_print.o libfastjson_la-json_object_iterator.o libfastjson_la-json_tokener.o libfastjson_la-json_util.o  .libs/libfastjson.lax/libfastjson-internal.a/libfastjson_internal_la-arraylist.o .libs/libfastjson.lax/libfastjson-internal.a/libfastjson_internal_la-debug.o .libs/libfastjson.lax/libfastjson-internal.a/libfastjson_internal_la-printbuf.o 
+xiar: executing 'ar'
+ar: `u' modifier ignored since `D' is the default (see `U')
+libtool: link: /usr/bin/x86_64-linux-gnu-ranlib .libs/libfastjson.a
+libtool: link: rm -fr .libs/libfastjson.lax
+libtool: link: ( cd ".libs" && rm -f "libfastjson.la" && ln -s "../libfastjson.la" "libfastjson.la" )
+make[3]: Leaving directory '/dev/shm/libfastjson/libfastjson-0.99.8'
+Making all in tests
+make[3]: Entering directory '/dev/shm/libfastjson/libfastjson-0.99.8/tests'
+make[3]: Nothing to be done for 'all'.
+make[3]: Leaving directory '/dev/shm/libfastjson/libfastjson-0.99.8/tests'
+make[2]: Leaving directory '/dev/shm/libfastjson/libfastjson-0.99.8'
+make[1]: Leaving directory '/dev/shm/libfastjson/libfastjson-0.99.8'
+   dh_auto_test
+   create-stamp debian/debhelper-build-stamp
+   dh_testroot
+   dh_prep
+   dh_auto_install
+	make -j1 install DESTDIR=/dev/shm/libfastjson/libfastjson-0.99.8/debian/tmp AM_UPDATE_INFO_DIR=no
+make[1]: Entering directory '/dev/shm/libfastjson/libfastjson-0.99.8'
+Making install in .
+make[2]: Entering directory '/dev/shm/libfastjson/libfastjson-0.99.8'
+make[3]: Entering directory '/dev/shm/libfastjson/libfastjson-0.99.8'
+ /bin/mkdir -p '/dev/shm/libfastjson/libfastjson-0.99.8/debian/tmp/usr/lib/x86_64-linux-gnu'
+ /bin/bash ./libtool   --mode=install /usr/bin/install   libfastjson.la '/dev/shm/libfastjson/libfastjson-0.99.8/debian/tmp/usr/lib/x86_64-linux-gnu'
+libtool: install: /usr/bin/install .libs/libfastjson.so.4.2.0 /dev/shm/libfastjson/libfastjson-0.99.8/debian/tmp/usr/lib/x86_64-linux-gnu/libfastjson.so.4.2.0
+libtool: install: (cd /dev/shm/libfastjson/libfastjson-0.99.8/debian/tmp/usr/lib/x86_64-linux-gnu && { ln -s -f libfastjson.so.4.2.0 libfastjson.so.4 || { rm -f libfastjson.so.4 && ln -s libfastjson.so.4.2.0 libfastjson.so.4; }; })
+libtool: install: (cd /dev/shm/libfastjson/libfastjson-0.99.8/debian/tmp/usr/lib/x86_64-linux-gnu && { ln -s -f libfastjson.so.4.2.0 libfastjson.so || { rm -f libfastjson.so && ln -s libfastjson.so.4.2.0 libfastjson.so; }; })
+libtool: install: /usr/bin/install .libs/libfastjson.lai /dev/shm/libfastjson/libfastjson-0.99.8/debian/tmp/usr/lib/x86_64-linux-gnu/libfastjson.la
+libtool: install: /usr/bin/install .libs/libfastjson.a /dev/shm/libfastjson/libfastjson-0.99.8/debian/tmp/usr/lib/x86_64-linux-gnu/libfastjson.a
+libtool: install: chmod 644 /dev/shm/libfastjson/libfastjson-0.99.8/debian/tmp/usr/lib/x86_64-linux-gnu/libfastjson.a
+libtool: install: /usr/bin/x86_64-linux-gnu-ranlib /dev/shm/libfastjson/libfastjson-0.99.8/debian/tmp/usr/lib/x86_64-linux-gnu/libfastjson.a
+libtool: warning: remember to run 'libtool --finish /usr/lib/x86_64-linux-gnu'
+ /bin/mkdir -p '/dev/shm/libfastjson/libfastjson-0.99.8/debian/tmp/usr/include/libfastjson'
+ /usr/bin/install -m 644 atomic.h json.h json_object.h json_object_iterator.h json_object_private.h json_tokener.h json_util.h '/dev/shm/libfastjson/libfastjson-0.99.8/debian/tmp/usr/include/libfastjson'
+ /bin/mkdir -p '/dev/shm/libfastjson/libfastjson-0.99.8/debian/tmp/usr/lib/x86_64-linux-gnu/pkgconfig'
+ /usr/bin/install -m 644 libfastjson.pc '/dev/shm/libfastjson/libfastjson-0.99.8/debian/tmp/usr/lib/x86_64-linux-gnu/pkgconfig'
+make[3]: Leaving directory '/dev/shm/libfastjson/libfastjson-0.99.8'
+make[2]: Leaving directory '/dev/shm/libfastjson/libfastjson-0.99.8'
+Making install in tests
+make[2]: Entering directory '/dev/shm/libfastjson/libfastjson-0.99.8/tests'
+make[3]: Entering directory '/dev/shm/libfastjson/libfastjson-0.99.8/tests'
+make[3]: Nothing to be done for 'install-exec-am'.
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/dev/shm/libfastjson/libfastjson-0.99.8/tests'
+make[2]: Leaving directory '/dev/shm/libfastjson/libfastjson-0.99.8/tests'
+make[1]: Leaving directory '/dev/shm/libfastjson/libfastjson-0.99.8'
+   debian/rules override_dh_install
+make[1]: Entering directory '/dev/shm/libfastjson/libfastjson-0.99.8'
+find debian/tmp -name '*.la' -print -delete
+debian/tmp/usr/lib/x86_64-linux-gnu/libfastjson.la
+dh_install
+make[1]: Leaving directory '/dev/shm/libfastjson/libfastjson-0.99.8'
+   dh_installdocs
+   dh_installchangelogs
+   dh_perl
+   dh_link
+   dh_strip_nondeterminism
+   dh_compress
+   dh_fixperms
+   debian/rules override_dh_missing
+make[1]: Entering directory '/dev/shm/libfastjson/libfastjson-0.99.8'
+dh_missing --fail-missing
+make[1]: Leaving directory '/dev/shm/libfastjson/libfastjson-0.99.8'
+   dh_strip
+   dh_makeshlibs
+   dh_shlibdeps
+dpkg-shlibdeps: warning: package could avoid a useless dependency if debian/libfastjson4/usr/lib/x86_64-linux-gnu/libfastjson.so.4.2.0 was not linked against libdl.so.2 (it uses none of the library's symbols)
+dpkg-shlibdeps: warning: package could avoid a useless dependency if debian/libfastjson4/usr/lib/x86_64-linux-gnu/libfastjson.so.4.2.0 was not linked against libgcc_s.so.1 (it uses none of the library's symbols)
+   dh_installdeb
+   dh_gencontrol
+   dh_md5sums
+   dh_builddeb
+dpkg-deb: building package 'libfastjson4' in '../libfastjson4_0.99.8-2_amd64.deb'.
+dpkg-deb: building package 'libfastjson-dev' in '../libfastjson-dev_0.99.8-2_amd64.deb'.
+dpkg-deb: building package 'libfastjson4-dbgsym' in '../libfastjson4-dbgsym_0.99.8-2_amd64.deb'.
+ dpkg-genbuildinfo --build=binary
+ dpkg-genchanges --build=binary >../libfastjson_0.99.8-2_amd64.changes
+dpkg-genchanges: info: binary-only upload (no source code included)
+ dpkg-source --after-build .
+dpkg-buildpackage: info: binary-only upload (no source included)
+Now running lintian libfastjson_0.99.8-2_amd64.changes ...
+Finished running lintian.
